@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+<style>
+    .jumbotron{
+        width: 70%;
+        margin: 0 auto;
+        background-color: navy;
+        color: white;
+    }
+    .section-1, .section-2{
+        border: 2px solid black;
+        margin: 10px auto;
+        width: 70%;
+    }
+    .title{
+        background: black;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .article{
+        background: #efefef;
+    }
+    input {
+        width: 95%;
+        padding: 5px;
+        margin: 10px 10px;
+    }
+    .main-title{
+        text-align : center;
+        font-size: 20px;
+    }
+    button{
+        background: gray;
+        color: white;
+        border: none;
+        padding: 5px;
+        margin: 0 0 10px 10px;
+    }
+    label{
+        margin: 0 10px;
+    }
+    .object{
+        margin: 10px 10px;
+        padding: 10px;
+    }
+</style>
+
+
+
+<div class="jumbotron">
+    <h1 class="main-title">New York Time Search</h1>
+</div>
+<div class="section-1 ">
+    <h1 class="title">Search Parameter</h1>
+    <label> Search Terms</label>
+    <input type="text" placeholder="Donald Trump" id="searchTxt">
+    <label> Number of Records to Retrieve</label>
+    <input type="text" placeholder="5" id="numOfRec">
+    <label>Start Year (Optional</label>
+    <input type="text" id="startYr">
+    <label>End Year (Optional)</label>
+    <input type="text" id="endYr">
+    <button class="search"> Search </button>
+    <button class="clear-result"> Clear Results </button>
+</div>
+<div class="section-2">
+    <h1 class="title">Top Articles</h1>
+    <div class="article">
+        <h1 class="object">OBJECT TITLE</h1>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="app.js"></script>
+
+</html>
